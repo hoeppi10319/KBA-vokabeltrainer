@@ -12,6 +12,11 @@
   <modules>
 
     <module>daten-management-api</module>
+    <module>daten-management-impl</module>
+    <module>duell-management-api</module>
+    <module>user-management-api</module>
+    <module>user-management-impl</module>
+    <module>configuration</module>
   </modules>
 
   <properties>
