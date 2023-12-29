@@ -17,6 +17,8 @@
     <module>user-management-api</module>
     <module>user-management-impl</module>
     <module>configuration</module>
+      <module>duell-ui-api</module>
+    <module>duell-ui-impl</module>
   </modules>
 
   <properties>
