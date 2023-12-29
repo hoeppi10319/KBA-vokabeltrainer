@@ -10,7 +10,7 @@
   <name>KBA-vokabeltrainer</name>
   <url>http://maven.apache.org</url>
   <modules>
-    <module>daten.management-impl</module>
+
   </modules>
 
   <properties>
