@@ -17,7 +17,9 @@ class DatenServiceParamlTest {
 
     private DatenService datenService;
     // Pfad zum Testdateiverzeichnis, angepasst an das Betriebssystem
-    private static final String TEST_FILE_DIR = Paths.get(System.getProperty("user.dir"), "src", "main", "resources", "vocabulary") + File.separator;
+    private static final String TEST_FILE_DIR = Paths.get(System.getProperty("user.dir"), "src", "main", "resources","resources", "vocabulary") + File.separator;
+
+
 
     @BeforeEach
     public void setUp() {

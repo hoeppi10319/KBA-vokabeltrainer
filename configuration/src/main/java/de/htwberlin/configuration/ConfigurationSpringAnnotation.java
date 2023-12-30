@@ -18,6 +18,10 @@ import java.nio.file.Paths;
 @Configuration
 public class ConfigurationSpringAnnotation {
 
+    private static final String Lektion_FILE_DIR = Paths.get(System.getProperty("user.dir"), "src", "main", "resources","resources", "vocabulary") + File.separator;
+    //C:\Users\phill\IdeaProjects\KBA-vokabeltrainer\daten-management-impl\src\main\resources\resources\vocabulary
+    //private static final String Lektion_FILE_DIR = "C:\\Users\\phill\\IdeaProjects\\KBA-vokabeltrainer\\daten-management-impl\\src\\main\\resources\\resources\\vocabulary\\body.txt";
+
     @Bean
     public DuellService duellService() {
         return new DuellService() {
@@ -31,7 +35,10 @@ public class ConfigurationSpringAnnotation {
     @Bean
     public Lektion lektion() throws IOException {
         DatenService datenService = new DatenServiceImpl();
-        return datenService.createLektion("C:\\Users\\paulm\\IdeaProjects\\kba_final\\daten-management-impl\\src\\main\\resources\\resources\\vocabulary\\Unit 1 This is London - Part A.txt");
+
+        return datenService.createLektion(Lektion_FILE_DIR + "body.txt" );
+        //return datenService.createLektion("C:\\Users\\phill\\IdeaProjects\\KBA-vokabeltrainer\\daten-management-impl\\src\\main\\resources\\resources\\vocabulary\\body.txt");
+        //return datenService.createLektion("C:\\Users\\paulm\\IdeaProjects\\kba_final\\daten-management-impl\\src\\main\\resources\\resources\\vocabulary\\Unit 1 This is London - Part A.txt");
 
     }
 
